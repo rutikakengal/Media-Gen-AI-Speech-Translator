@@ -1,0 +1,26 @@
+# Virtual environment
+.venv/
+venv/
+
+# Python cache
+__pycache__/
+*.pyc
+
+# OS files
+.DS_Store
+Thumbs.db
+
+# Logs
+*.log
+
+# Environment variables
+.env
+
+# Uploads folder (optional, can be large)
+uploads/
+
+# Jupyter (if any)
+.ipynb_checkpoints/
+
+# IDE files
+.vscode/
