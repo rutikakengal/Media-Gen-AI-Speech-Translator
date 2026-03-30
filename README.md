@@ -140,4 +140,11 @@ http://localhost:5000
 
 ---   
 
+## ⚠️ Limitations
+- Heavy AI models may require high RAM
+- Video processing can be slow
+- Not optimized for free cloud hosting (memory limits)
+
+---
+
 
