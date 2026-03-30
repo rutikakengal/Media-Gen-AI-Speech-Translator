@@ -7,3 +7,5 @@ soundfile
 openai-whisper
 yt_dlp
 nest_asyncio
+numpy
+
