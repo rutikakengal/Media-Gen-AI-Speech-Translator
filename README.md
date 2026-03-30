@@ -114,4 +114,20 @@ http://localhost:5000
 
 ---
 
+## 🌍 Supported Languages
+- English
+- Hindi
+- Bengali
+- Tamil
+- Telugu
+- Kannada
+- Malayalam
+- Marathi
+- Gujarati
+- Punjabi
+- Nepali
+- Assamese
+
+---
+
 
