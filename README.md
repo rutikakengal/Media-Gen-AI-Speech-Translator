@@ -147,4 +147,14 @@ http://localhost:5000
 
 ---
 
+## 💡 Future Improvements
+- 🎯 Faster transcription models
+- ☁️ Cloud-based AI API integration
+- 🎥 Real-time video streaming support
+- 🎨 Improved UI/UX
+- 🌐 Multilingual voice output
+
+---
+  
+
 
