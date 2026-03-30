@@ -84,7 +84,7 @@ def download_youtube_audio(youtube_url):
 
 
 print("⏳ Loading Whisper model...")
-whisper_model = whisper.load_model("small")
+whisper_model = whisper.load_model("base")
 print("✅ Whisper model loaded!")
 
 translator = Translator()
@@ -380,5 +380,5 @@ def process_file():
 
 # ✅ IMPORTANT FOR RENDER
 if __name__ == "__main__":
-    port = int(os.environ.get("PORT", 5000))
+    port = int(os.environ.get("PORT", 10000))
     app.run(host="0.0.0.0", port=port)
