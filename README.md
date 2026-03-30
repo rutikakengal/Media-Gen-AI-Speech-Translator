@@ -85,3 +85,33 @@ Media-Gen-AI/
 ├── requirements.txt # Dependencies
 └── README.md
 ```
+---
+
+## ⚙️ Installation & Setup
+
+### 1️⃣ Clone the repository
+
+```bash
+git clone https://github.com/your-username/Media-Gen-AI.git
+cd Media-Gen-AI
+```
+
+### 2️⃣ Install dependencies
+
+```bash
+pip install -r requirements.txt
+```
+
+### 3️⃣ Run the app
+```bash
+python app.py
+```
+
+### 4️⃣ Open in browser
+```bash
+http://localhost:5000
+```
+
+---
+
+
