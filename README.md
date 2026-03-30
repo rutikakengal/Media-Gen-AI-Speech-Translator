@@ -130,4 +130,14 @@ http://localhost:5000
 
 ---
 
+## 🧠 How It Works
+1. User uploads audio/video or provides YouTube URL
+2. Audio is extracted from the input
+3. Whisper transcribes speech into text
+4. Text is translated into the selected language
+5. gTTS converts translated text into speech
+6. Output is displayed and played in the browser
+
+---   
+
 
