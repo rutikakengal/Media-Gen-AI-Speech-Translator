@@ -155,6 +155,32 @@ http://localhost:5000
 - 🌐 Multilingual voice output
 
 ---
+
+## 🙌 Author
+
+<p align="center">
+  <img src="https://readme-typing-svg.herokuapp.com?font=Poppins&size=22&duration=3000&color=6A5ACD&center=true&vCenter=true&width=500&lines=Made+by+Rutika+Kengal;Building+with+AI+%26+Creativity;Always+Learning+New+Things" />
+</p>
+
+<p align="center">
+  <b>⚡ Built by Rutika Kengal ⚡</b>
+</p>
+
+<p align="center">
+  <img src="https://img.shields.io/badge/Made%20with-❤️-red?style=for-the-badge"/>
+  <img src="https://img.shields.io/badge/Powered%20by-AI-blue?style=for-the-badge"/>
+  <img src="https://img.shields.io/badge/Status-Active-success?style=for-the-badge"/>
+</p>
+
+---
+
+<p align="center">
+  <img src="https://readme-typing-svg.herokuapp.com?font=Poppins&size=20&duration=2500&color=F7C948&center=true&vCenter=true&width=500&lines=Like+this+project%3F;Give+it+a+star+⭐;It+means+a+lot+💛"/>
+</p>
+
+---
+
+
   
 
 
