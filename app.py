@@ -84,7 +84,7 @@ def download_youtube_audio(youtube_url):
 
 
 print("⏳ Loading Whisper model...")
-whisper_model = whisper.load_model("base")
+whisper_model = whisper.load_model("tiny")
 print("✅ Whisper model loaded!")
 
 translator = Translator()
