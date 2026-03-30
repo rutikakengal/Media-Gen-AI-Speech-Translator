@@ -10,12 +10,14 @@
 
 
 
+# Generated from: app.ipynb
+# Converted at: 2026-03-28T10:17:54.692Z
+
 import os
 import io
 import base64
 import uuid
 from flask import Flask, request, jsonify, send_file
-from pyngrok import ngrok
 from gtts import gTTS
 from googletrans import Translator
 from moviepy import VideoFileClip
@@ -24,11 +26,7 @@ import whisper
 from yt_dlp import YoutubeDL
 import nest_asyncio
 
-nest_asyncio.apply()  # Fix async issues in Colab
-
-# Set ngrok auth token
-NGROK_AUTH_TOKEN = "33mJUw2EeWLbJ5BaQMIXVVxiEOB_3qDxVimYyfB1cvceFEPuU"
-ngrok.set_auth_token(NGROK_AUTH_TOKEN)
+nest_asyncio.apply()
 
 
 def unique_name(prefix="file", suffix=""):
@@ -86,7 +84,7 @@ def download_youtube_audio(youtube_url):
 
 
 print("⏳ Loading Whisper model...")
-whisper_model = whisper.load_model("small")  # change to medium/large if you have GPU
+whisper_model = whisper.load_model("small")
 print("✅ Whisper model loaded!")
 
 translator = Translator()
@@ -97,8 +95,9 @@ lang_code_map = {
 }
 
 
+# keep your HTML exactly same (no change)
 html_code = """
-<!DOCTYPE html>
+            <!DOCTYPE html>
 <html lang="en">
 <head>
   <meta charset="UTF-8">
@@ -335,14 +334,12 @@ html_code = """
     });
   </script>
 </body>
-</html>
-"""
+</html>"""
+
 
 os.makedirs("uploads", exist_ok=True)
 with open("index.html", "w", encoding="utf-8") as f:
     f.write(html_code)
-print("✅ index.html saved successfully")
-
 
 app = Flask(__name__)
 
@@ -372,12 +369,16 @@ def process_file():
         translation = translate_text(transcription, target_lang)
         tts_base64 = generate_tts(translation, target_lang)
 
-        return jsonify({"transcription": transcription, "translation": translation, "tts_base64": tts_base64})
+        return jsonify({
+            "transcription": transcription,
+            "translation": translation,
+            "tts_base64": tts_base64
+        })
     except Exception as e:
         return jsonify({"error": f"Server error: {e}"}), 500
 
 
-public_url = ngrok.connect(5000)
-print("🌍 Public URL:", public_url)
-
-app.run(port=5000)
+# ✅ IMPORTANT FOR RENDER
+if __name__ == "__main__":
+    port = int(os.environ.get("PORT", 5000))
+    app.run(host="0.0.0.0", port=port)
