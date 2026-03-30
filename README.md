@@ -76,3 +76,12 @@ Lightweight and efficient web server
 ---
 
 ## 📂 Project Structure
+```
+Media-Gen-AI/
+│
+├── app.py # Main Flask backend
+├── index.html # Frontend UI
+├── uploads/ # Temporary file storage
+├── requirements.txt # Dependencies
+└── README.md
+```
